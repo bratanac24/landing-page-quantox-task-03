@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+
+.overline {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.4rem;
+}
