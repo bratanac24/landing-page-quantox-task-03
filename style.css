@@ -1,5 +1,5 @@
 html {
-  font-size: 50%;
+  font-size: 62.5%;
 }
 
 body {
@@ -43,21 +43,20 @@ header > img {
   margin: auto;
   padding-top: 8.8rem;
 }
-
+.welcome-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .welcome {
   display: grid;
   grid-gap: 2rem;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   align-content: center;
-  max-height: 35.8rem;
-  width: 100%;
-  align-content: flex-start;
-  margin-left: 50%;
-  transform: translateX(-50%);
   overflow: hidden;
 }
-
 .image-group-left {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -72,7 +71,6 @@ header > img {
   grid-row: 1/2;
   text-align: center;
   margin: 0 8rem;
-  max-height: 35.8rem;
   min-width: 54rem;
 }
 .info h1 {
@@ -120,7 +118,7 @@ header > img {
   border-radius: 5rem;
   padding: 1.6rem 3.5rem 1.3rem 3.5rem;
   color: #ffffff;
-  margin: 0rem 0.8rem;
+  margin: 0.8rem 0.8rem;
 }
 
 .btn-cyan {
@@ -186,18 +184,21 @@ header > img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 111rem;
-  max-height: 24.2rem;
   margin: auto;
   margin-top: 4rem;
   justify-content: center;
+}
+
+.gallery-half {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .gallery img {
   border-radius: 1rem;
   height: 22.5rem;
   width: auto;
-  margin: 0 1.5rem;
+  margin: 1.5rem 1.5rem;
 }
 .gallery:first-child {
   margin-left: 0%;
@@ -206,6 +207,7 @@ header > img {
   margin-right: 0;
 }
 .note {
+  position: relative;
   text-align: center;
   max-width: 54rem;
   margin: auto;
@@ -235,11 +237,9 @@ footer {
   position: absolute;
   z-index: -1;
   opacity: 20%;
-  transform: translateY(-55rem);
 }
 .footer-content {
   margin: auto;
-  max-width: 111rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -256,4 +256,89 @@ footer {
 .footer-content p {
   max-width: 35rem;
   margin-right: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    column-gap: 0rem;
+  }
+  .image-group-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    min-height: 35.8rem;
+    justify-content: end;
+  }
+  .image-group-right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    min-height: 35.8rem;
+    justify-content: start;
+  }
+  .info {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 0rem;
+    min-width: 30rem;
+  }
+  .down {
+    justify-content: center;
+  }
+  .up-phone {
+    justify-content: start;
+  }
+  .gallery img {
+    height: 16.4rem;
+  }
+  .footer-content {
+    margin: 5rem 0rem;
+  }
+  .footer-content > * {
+    min-width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-content h2 {
+    margin-right: 0rem;
+  }
+  .footer-content p {
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .avatar {
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 0.7rem 0.8rem;
+  }
+  .image-group-left {
+    min-width: 0rem;
+    min-width: 50%;
+    min-height: 20rem;
+  }
+  .image-group-right {
+    min-width: 0rem;
+    min-width: 50%;
+    min-height: 20rem;
+  }
+  .gallery img {
+    height: 15rem;
+    margin: 0.5rem 0.5rem;
+  }
+  .info {
+    min-width: 0rem;
+    margin: 0 1rem;
+  }
+  .info h1 {
+    font-size: 5rem;
+  }
+  .note {
+    margin: 7rem 1rem;
+  }
+  .note h2 {
+    font-size: 3.2rem;
+  }
+  .footer-content h2 {
+    font-size: 3.2rem;
+  }
 }
