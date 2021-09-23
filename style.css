@@ -259,7 +259,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .welcome {
-    column-gap: 0rem;
+    row-gap: 0rem;
   }
   .image-group-left {
     grid-column: 1/2;
@@ -310,14 +310,15 @@ footer {
 }
 @media screen and (max-width: 542px) {
   .avatar {
-    width: 5.5rem;
-    height: 5.5rem;
-    padding: 0.7rem 0.8rem;
+    width: 6rem;
+    height: 6rem;
+    padding: 1.5rem 1.5rem;
   }
+
   .image-group-left {
     min-width: 0rem;
     min-width: 50%;
-    min-height: 20rem;
+    min-height: 30rem;
   }
   .image-group-right {
     min-width: 0rem;
@@ -330,7 +331,7 @@ footer {
   }
   .info {
     min-width: 0rem;
-    margin: 0 1rem;
+    margin: 0rem 1rem;
   }
   .info h1 {
     font-size: 5rem;
