@@ -259,6 +259,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .welcome {
+    column-gap: 2.5rem;
     row-gap: 0rem;
   }
   .image-group-left {
@@ -314,7 +315,9 @@ footer {
     height: 6rem;
     padding: 1.5rem 1.5rem;
   }
-
+  .welcome {
+    column-gap: 15rem;
+  }
   .image-group-left {
     min-width: 0rem;
     min-width: 50%;
