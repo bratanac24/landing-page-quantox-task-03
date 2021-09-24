@@ -43,19 +43,22 @@ header > img {
   margin: auto;
   padding-top: 8.8rem;
 }
-.welcome-wrapper {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 .welcome {
   display: grid;
-  grid-gap: 2rem;
+  column-gap: 0;
+  row-gap: 2rem;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   align-content: center;
+  position: relative;
 }
+
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .image-group-left {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -64,6 +67,7 @@ header > img {
   justify-content: start;
   max-height: 35.8rem;
   min-width: 39.4rem;
+  margin-left: -1.5rem;
 }
 .info {
   grid-column: 2/3;
@@ -84,6 +88,7 @@ header > img {
   flex-direction: row;
   justify-content: end;
   min-width: 39.4rem;
+  margin-right: -1.5rem;
 }
 
 .image-sub-group {
@@ -258,20 +263,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .welcome {
-    column-gap: 2.5rem;
-    row-gap: 0rem;
+  .avatar {
+    width: 15vw;
+    height: 15vw;
   }
   .image-group-left {
     grid-column: 1/2;
     grid-row: 1/2;
-    min-height: 35.8rem;
+    height: 60vw;
     justify-content: end;
   }
   .image-group-right {
     grid-column: 2/3;
     grid-row: 1/2;
-    min-height: 35.8rem;
+    height: 60vw;
     justify-content: start;
   }
   .info {
@@ -311,22 +316,19 @@ footer {
 }
 @media screen and (max-width: 542px) {
   .avatar {
-    width: 6rem;
-    height: 6rem;
-    padding: 1.5rem 1.5rem;
-  }
-  .welcome {
-    column-gap: 15rem;
+    width: 17vw;
+    height: 17vw;
+    padding: 0.5rem 0.5rem;
   }
   .image-group-left {
     min-width: 0rem;
-    min-width: 50%;
-    min-height: 30rem;
+    width: 60vw;
+    margin-left: -0.5rem;
   }
   .image-group-right {
     min-width: 0rem;
-    min-width: 50%;
-    min-height: 20rem;
+    width: 60vw;
+    margin-right: -0.5rem;
   }
   .gallery img {
     height: 15rem;
