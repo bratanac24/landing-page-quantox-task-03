@@ -11,7 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #87879d;
-  x-overflow: hidden;
 }
 
 h1 {
@@ -58,6 +57,7 @@ header > img {
 .welcome-wrapper {
   display: flex;
   justify-content: center;
+  overflow:hidden;
 }
 
 .image-group-left {
